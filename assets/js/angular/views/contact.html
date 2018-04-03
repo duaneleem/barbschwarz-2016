@@ -1,0 +1,107 @@
+<div class="space-70"></div>
+<div class="container">
+    <div class="row space-bottom-40">
+        <div class="col-xs-12 text-center">
+            <h2>CONTACT BARB</h2>
+        </div><!-- /col -->
+    </div><!-- /row -->
+
+    <div class="row margin-b-50">
+        <div class="col-sm-6 text-center margin-b-30">
+            <h3>Email Me</h3>
+            <a href="mailto:barb@iahsp.com" class="text-white"><span class="btn btn-dark btn-xl">Barb@IAHSP.com</span></a>
+
+            <div class="space-top-40">
+                <h3>Love to Have You Follow Me</h3>
+                <div class="clearfix">
+                    <ul class="list-inline text-center social-list">
+                        <li>
+                            <a class="social-icon social-gray social-sm si-facebook" href="https://www.facebook.com/barbstagedhomes" target="_blank" data-toggle="tooltip" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a class="social-icon social-gray social-sm si-facebook" href="https://www.facebook.com/BarbSchwarzGarden/" target="_blank" data-toggle="tooltip" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a class="social-icon social-gray social-sm si-twitter" href="https://twitter.com/BarbStagedHomes" target="_blank" data-toggle="tooltip" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a class="social-icon social-gray social-sm si-linkedin" href="https://www.linkedin.com/in/barbschwarzstaging" target="_blank" data-toggle="tooltip" title="" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a class="social-icon social-gray social-sm si-pinterest" href="https://www.pinterest.com/barbstagedhomes/" target="_blank" data-toggle="tooltip" title="" data-original-title="Google+"><i class="fa fa-pinterest"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 text-center margin-b-30">
+            <div class="contact-form">
+                <form role="form" name="formContactBarb" novalidate="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- <label class="control-label" for="name">Name *</label>-->
+                                <div>
+                                    <input type="text" class="form-control"
+                                        ng-class="{ 'has-error': formContactBarb.frmName.$error.required && !formContactBarb.frmName.$pristine }"
+                                        id="frmName"
+                                        placeholder="Enter your name"
+                                        ng-model="contactDetails.name"
+                                        required
+                                    /><!-- /frmName -->
+                                </div>
+                                <span class="help-block" style="display: none;">Please enter your name.</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- <label class="control-label" for="email">Email Address *</label>-->
+                                <div>
+                                    <input type="email" class="form-control"
+                                        id="frmEmail"
+                                        placeholder="Enter your email"
+                                        ng-model="contactDetails.email"
+                                        required
+                                    /><!-- /frmEmail -->
+                                </div>
+                                <span class="help-block" style="display: none;">Please enter a valid e-mail address.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label class="control-label" for="message">Message *</label>-->
+                        <div>
+                            <textarea id="frmMessage" rows="5" cols="30" class="form-control"
+                                ng-class="{ 'has-error': formContactBarb.frmMessage.$error.required && !formContactBarb.frmMessage.$pristine }"
+                                placeholder="Enter your message"
+                                ng-model="contactDetails.message"
+                                required
+                            ></textarea><!-- /frmMessage -->
+                        </div>
+                        <span class="help-block" style="display: none;">Please enter a message.</span>
+                    </div>
+
+                    <div class="form-group" style="margin-top: 10px;">
+                        <!-- <label class="control-label" for="captcha_code">Text Within Image *</label>-->
+                        <div>
+                            <div vc-recaptcha key="'6LfYYiYTAAAAAB0amONJ2KNoCEC2SgPQ2EKKoG7d'"></div>
+                        </div>
+                    </div>
+                    <div class="pull-left space-top-10">
+                        <span class="help-block" style="display: none;">Please enter a the security code.</span>
+                        <button type="button" class="btn btn-primary text-white"
+                            ng-click="fnClearForm();">
+                            Clear
+                        </button>
+                        <button type="button" class="btn btn-success" id="submit"
+                            ng-click="fnSendForm()"
+                            ng-class="{'disabled': formContactBarb.$invalid}"
+                            ng-disabled="formContactBarb.$invalid">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div><!--contact form-->
+        </div>
+    </div>
+</div>
