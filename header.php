@@ -26,14 +26,6 @@
 <meta name="msapplication-config" content="https://d1xrp9zhb3ks3c.cloudfront.net/web/barbschwarz/images/favicons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
 
-<!-- OpenGraph -->
-<meta property="og:title" content="Barb Schwarz">
-<meta property="og:site_name" content="Barb Schwarz">
-<meta property="og:url" content="http://www.barb-schwarz.com">
-<meta property="og:description" content="The Creator of Home Staging®, The ASP®/ASPM® Designations & Courses, Stagedhomes.com®, The Staging University®, The IAHSP® Home Staging Association & Foundation & World Wide Staging Service Week®, WWS">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://d1xrp9zhb3ks3c.cloudfront.net/web/barbschwarz/images/open-graph.jpg">
-
 <!-- Bootstrap -->
 <link href="<?php bloginfo("stylesheet_directory"); ?>/assets/template/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="<?php bloginfo("stylesheet_directory"); ?>/assets/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
