@@ -100,9 +100,11 @@
 					<li><a href="#about">About</a></li>
 					<li><a href="#sayings">Barb's Staging Sayings</a></li>
 					<li><a href="#contact">Contact</a></li>
+          <li><a href="/staging-the-world/">Staging The World</a></li>
 					<li><a href="/blog">Blog</a></li>
 				<?php else : ?>
 					<li><a href="/blog">Blog Home</a></li>
+          <li><a href="/staging-the-world/">Staging The World</a></li>
 					<li class="hidden-xs"><div style="margin-top: 9px;"><a href="/" class="btn btn-sm btn-social-icon btn-tumblr"><span class="fa fa-home"></span></a></div></li>
 					<li>&nbsp;</li>
 				<?php endif; ?>

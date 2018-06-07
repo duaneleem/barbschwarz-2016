@@ -30,9 +30,9 @@
                     $("#submit").prop('disabled', true);
 
                     // send POST data
-                    $http.post("https://www.leemtek.com/forms/barbschwarz", $scope.contactDetails)
+                    $http.post("https://us-central1-leemtek-secure-forms.cloudfunctions.net/barbschwarz/send", $scope.contactDetails)
                         .then(function successCallback(response) {
-                            if(response.data.sent === "yes") {
+                            if(response.data.status === "email sent") {
                                 // update submit button to indicate success
                                 factorySendEmail.fnSendSuccessDOM();
                             } else {
